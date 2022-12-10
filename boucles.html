@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <title>Exercices-JS</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-light shadow-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand me-5" href="./index.html">Exercices-JS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="row justify-content-around text-center collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
+                        <li class="col nav-item">
+                            <a class="nav-link fs-2" aria-current="page" href="./interactions.html">Interactions</a>
+                        </li>
+                        <li class="col nav-item">
+                            <a class="nav-link fs-2" href="./operateurs.html">Opérateurs</a>
+                        </li>
+                        <li class="col nav-item">
+                            <a class="nav-link fs-2" href="./conditions.html">Conditions</a>
+                        </li>
+                        <li class="col nav-item">
+                            <a class="nav-link active fs-2" href="./boucles.html">Boucles</a>
+                        </li>
+                        <li class="col nav-item">
+                            <a class="nav-link fs-2" href="./fonctions.html">Fonctions</a>
+                        </li>
+                        <li class="col nav-item">
+                            <a class="nav-link fs-2" href="./tableaux.html">Tableaux</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mb-5">
+
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-11 bgContainer shadow-lg"></div>
+            </div>
+            <div class="row justify-content-center text-center my-5">
+                <h1 class="col-11 py-2 mb-5">Les boucles</h1>
+            </div>
+    
+            <div class="row d-flex justify-content-evenly mt-5">
+                <div class="exo text-center col-md-6 py-3 px-3 mb-5">
+                    <h2 class="mb-4">Exercice 1</h2>
+                    <p>Créer une page HTML qui demande à l'utilisateur un prénom.</p>
+                    <p>La page doit continuer à demander des prénoms à l'utilisateur jusqu'à ce qu'il laisse le champ vide.</p>
+                    <p>Enfin, la page affiche sur la console le nombre de prénoms et les prénoms saisis.</p>
+                </div>
+                
+                <div class="exo text-center col-md-3 py-3 px-3 mb-5">
+                    <h2 class="mb-4">Exercice 2</h2>
+                    <p>Ecrire un programme qui affiche les nombres inférieurs à N.</p>
+                </div>
+            </div>
+    
+            <div class="row d-flex justify-content-evenly mt-md-5">
+                <div class="exo text-center col-md-4 py-3 px-3 mb-5">
+                    <h2 class="mb-4">Exercice 3</h2>
+                    <p>Ecrire un programme qui demande à l'utilisateur de saisir des entiers et en affiche la somme et la moyenne (on arrête la saisie avec la valeur 0).</p>
+                </div>
+
+                <div class="exo text-center col-md-5 py-3 px-3 mb-5">
+                    <h2 class="mb-4">Exercice 4</h2>
+                    <p>Ecrire un programme qui calcule les N premiers multiples d'un nombre entier X, N et X étant entrés au clavier.</p>
+                    <p>Exemple pour N=5 et X=7 :</p>
+                    <p>1 x 7 = 7 <br>
+                    2 x 7 = 14 <br>
+                    3 x 7 = 21 <br>
+                    4 x 7 = 28 <br>
+                    5 x 7 = 35</p>
+                    <p>Il est demandé de choisir la structure répétitive (<span>for</span>, <span>while</span>, <span>do... while</span>) la mieux appropriée au problème.</p>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-evenly mt-md-5">
+                <div class="exo text-center col-md-9 py-3 px-3 mb-5">
+                    <h2 class="mb-4">Exercice 5</h2>
+                    <p>Ecrire le programme qui compte le nombre de voyelles d’un mot saisi au clavier, en utilisant :</p>
+                    <p><span>myVar.length</span> : retourne le nombre de lettres de la chaîne <span>myVar</span>.</p>
+                    <p><span>myVar.substring(p,n)</span> : extrait d'une chaîne donnée une sous-chaîne de n caractères à partir de la position p 
+                        (attention, en Javascript, le 1er caractère se trouve à la position 0).</p>
+                    <p><span>myVar.indexOf(chaine)</span> : retourne le rang de la première occurrence de chaîne dans la variable myVar donnée (si non trouvé : -1).</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./public/assets/js/boucles.js"></script>
+</body>
+</html>
